@@ -34,7 +34,7 @@
     justify-content: center;
     align-items: center;
     background-image: url(assets/closeFace-min.jpg);
-    transition: opacity 0.3s ease-in-out;
+    /* transition: opacity 0.3s ease-in-out; */
     background-size: cover;
     background-position: center;
   }
@@ -393,6 +393,7 @@
   }
 
   .self-care h2 {
+    font-family: 'Lobster';
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 30px;
