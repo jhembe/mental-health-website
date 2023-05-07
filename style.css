@@ -277,16 +277,22 @@
 
 
 
-  
+
 
 
 /* Mental Health Conditions Section */
 .mental-health-conditions {
-    height: 100vh;
+    /* height: 100vh; */
     padding: 80px 0;
     background-color: #ffffff;
   }
   
+  .container-conditions{
+    /* background-color: red; */
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .mental-health-conditions h2 {
     font-size: 40px;
     font-weight: 700;
@@ -345,7 +351,7 @@
       }
 
       .mental-health-conditions {
-        height: 190vh;
+        /* height: 190vh; */
         padding: 80px 0;
         background-color: #ffffff;
       }
@@ -358,10 +364,17 @@
 /* Self-Care Section */
 
 .self-care {
-    padding: 80px 0;
+    /* padding: 80px 0; */
     background-color: #f5f5f5;
   }
   
+  .self-contain{
+    /* background-color: red; */
+    width: 96%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .self-care h2 {
     font-size: 40px;
     font-weight: 700;
@@ -372,16 +385,21 @@
   .self-care-grid {
     display: flex;
     justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
   }
   
   .self-care-item {
+    /* background-color: blue; */
+    /* width: 360px; */
+    margin:0 10px;
     flex: 0 0 31%;
     margin-bottom: 50px;
     border: 1px solid #e0e0e0;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .self-care-item img {
@@ -433,9 +451,24 @@
 
 /* Support Section */
 .support {
-    height: 100vh;
+    /* background-color: red; */
+    /* height: 100vh; */
     padding: 80px 0;
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
+    /* background-color: blue; */
+  }
+
+  #support{
+    background-color: red;
+    padding: 0;
+    margin: 0;
+  }
+
+  .supp-contain{
+    /* background-color: red; */
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
   }
   
   .support h2 {
@@ -454,10 +487,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
   
   .resource-category {
+    width: 98%;
+    /* background-color: blue; */
+    border-radius: .4em;
     flex: 0 0 31%;
     margin-bottom: 50px;
     border: 1px solid #e0e0e0;
@@ -638,6 +674,14 @@
         height: 150vh;
         padding: 80px 0;
         background-color: #f5f5f5;
+      }
+
+      .resources {
+        display: flex;
+        align-items: center;
+        justify-content: space;
+        flex-wrap: wrap;
+        margin-top: 50px;
       }
 }
 
