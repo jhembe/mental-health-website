@@ -34,6 +34,7 @@
     justify-content: center;
     align-items: center;
     background-image: url(assets/closeFace.jpg);
+    transition: opacity 0.3s ease-in-out;
     background-size: cover;
     background-position: center;
   }
@@ -164,6 +165,7 @@
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+    transition: opacity 0.3s ease-in-out;
   }
   
   .about-us .about-box .box h4 {
@@ -233,6 +235,7 @@
     height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
+    transition: opacity 0.3s ease-in-out;
   }
   
   .founder-name {
@@ -331,6 +334,7 @@
   .mental-health-conditions .condition img {
     width: 100%;
     margin-bottom: 20px;
+    transition: opacity 0.3s ease-in-out;
   }
   
   .mental-health-conditions .condition h3 {
@@ -418,6 +422,7 @@
   .self-care-item img {
     width: 100%;
     margin-bottom: 20px;
+    transition: opacity 0.3s ease-in-out;
   }
   
   .self-care-item h3 {
