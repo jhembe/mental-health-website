@@ -112,12 +112,19 @@
 
 /* About Us Section */
 .about-us {
-    height: 140vh;
+    /* height: 140vh; */
     padding: 80px 0;
     background-color: #f9f9f9;
     text-align: center;
   }
   
+  .abt-contain{
+    /* background-color: red; */
+    width: 70%;
+    margin: 0 auto;
+  }
+
+
   .about-us h2 {
     font-size: 40px;
     font-weight: 700;
@@ -237,7 +244,7 @@
     }
 
     .about-us {
-        height: 149vh;
+        /* height: 149vh; */
         padding: 80px 0;
         background-color: #f9f9f9;
         text-align: center;
@@ -254,10 +261,23 @@
     .founders-list{
         width: 100%;
       }
+
+      .abt-contain{
+        /* background-color: red; */
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+      }
   }
   
+  .achievements{
+    /* background-color: red; */
+    display: none;
+  }
 
 
+
+  
 
 
 /* Mental Health Conditions Section */
