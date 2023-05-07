@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(assets/closeFace.jpg);
+    background-image: url(assets/closeFace-min.jpg);
     transition: opacity 0.3s ease-in-out;
     background-size: cover;
     background-position: center;
