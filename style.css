@@ -1,3 +1,11 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 /*General*/
 
 *{
@@ -37,7 +45,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* adjust opacity as needed */
+    background-color: rgba(0, 0, 0, 0.7); /* adjust opacity as needed */
   }
   
 
@@ -49,18 +57,20 @@
   }
 
   .hero-heading {
-    font-size: 5rem;
+    font-family: 'Rubik';
+    font-size: 3rem;
     font-weight: bold;
-    color: #ffffff;
-    text-align: left;
+    color: #fffdfa;
+    text-align: center;
     margin: 0 20px 1rem;
     z-index: 1;
   }
   
   .hero-subheading {
-    font-size: 1.5rem;
+    font-family: 'Dancing Script';
+    font-size: 1.8rem;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     margin-bottom: 2rem;
     margin-left: 20px;
 
@@ -91,14 +101,12 @@
   @media screen and (max-width: 768px) {
     /* Reduce font sizes and adjust button padding for smaller screens */
 
-
-
     .hero-heading {
       font-size: 3rem;
       margin-bottom: 0.5rem;
     }
     .hero-subheading {
-      font-size: 1rem;
+      font-size: 1.5rem;
       margin-bottom: 1rem;
     }
     .button {
@@ -126,6 +134,7 @@
 
 
   .about-us h2 {
+    font-family: 'Lobster';
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 30px;
@@ -203,6 +212,7 @@
   }
   
   .founders-heading {
+    font-family: 'Lobster';
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -226,6 +236,7 @@
   }
   
   .founder-name {
+    font-family: 'Roboto Slab';
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -294,6 +305,7 @@
   }
 
   .mental-health-conditions h2 {
+    font-family: 'Rubik';
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 30px;
@@ -322,7 +334,8 @@
   }
   
   .mental-health-conditions .condition h3 {
-    font-size: 24px;
+    font-family: Acme;
+    font-size: 26px;
     font-weight: 600;
     margin-bottom: 20px;
     color: #333333;
@@ -453,13 +466,13 @@
 .support {
     /* background-color: red; */
     /* height: 100vh; */
-    padding: 80px 0;
+    padding: 80px 0 10px;
     /* background-color: #f5f5f5; */
     /* background-color: blue; */
   }
 
   #support{
-    background-color: red;
+    /* background-color: red; */
     padding: 0;
     margin: 0;
   }
@@ -685,14 +698,49 @@
       }
 }
 
+.supp-groups{
+  background-color: #14A44D;
+}
+
+.crisis{
+  background-color: #d12d36;
+}
+
+.mental-orgs{
+  background-color: #54B4D3;
+}
+
+.mental-orgs h3,.crisis h3,.supp-groups h3, .crisis ul li a, .supp-groups ul li a,.mental-orgs ul li a{
+  color: white;
+}
+
+
+.chat{
+  padding: 20px;
+  border-radius: .4em;
+  background-color: black;
+  color: white;
+}
+
+.chat h3,p{
+  margin: 0 0 10px;
+}
+
 
 
 
 
 /* Resources Section */
 .resources {
-    padding: 80px 0;
+    padding: 40px 0 10px;
     background-color: #ffffff;
+  }
+
+  .res-contain{
+    /* background-color: red; */
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
   }
   
   .resources h2 {
@@ -715,6 +763,10 @@
   }
   
   .category {
+    width: 98%;
+    /* background-color: blue; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: .4em;
     flex: 0 0 31%;
     margin-bottom: 50px;
     border: 1px solid #e0e0e0;
@@ -774,10 +826,20 @@
 
 
   footer {
+    width: 100%;
+    /* margin: 0 auto; */
     background-color: #F5F5F5;
     padding-top: 50px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .foot-contain{
+    width: 87%;
+    margin: 0 auto 50px;
+    /* width: 500px; */
+    /* background-color: red; */
+    /* background-color: black; */
   }
 
   footer h3 {
@@ -794,13 +856,27 @@
   }
 
   .map {
-    height: 200px;
+    width: 100%;
+    height: auto;
     background-color: #FFFFFF;
     border: 1px solid #EFEFEF;
   }
 
+  iframe{
+    width: 100%;
+  }
+
+  .form-contain{
+    margin-top: 40px;
+  }
+
+  .form-contain h3{
+    font-size: 1.5em;
+  }
+
   .form-group input,
   .form-group textarea {
+    height: 50px;
     width: 100%;
     border-radius: 5px;
     border: 1px solid #EFEFEF;
@@ -814,6 +890,7 @@
 
   .btn-primary {
     background-color: #007bff;
+    /* border-bottom: 20px; */
     border-color: #007bff;
     font-size: 1rem;
     font-weight: 500;
@@ -830,6 +907,26 @@
   }
 
   .copy-right {
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
+    text-align: center;
+    border-top: 20px;
+    padding: 20px 0;
+    background-color: black;
+    height: 100%;
+    color: white;
   }
 
+  .contact-contain h3,p{
+    /* background-color: red; */
+    color:rgb(218, 217, 217);
+  }
+
+  .contact-contain p{
+    /* background-color: red; */
+    color: rgb(218, 217, 217);
+  }
+
+
+  .col-12 p{
+    color: rgb(218, 217, 217);
+  }
