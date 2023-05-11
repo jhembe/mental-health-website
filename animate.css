@@ -1,0 +1,8 @@
+.founders-heading{
+    opacity: 0;
+    /* color: red; */
+}
+
+.founders-heading.animate__animated{
+    opacity: 1;
+}
