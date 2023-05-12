@@ -30,7 +30,7 @@ $(document).ready(function () {
     $('.founders-heading').addClass('animate__animated animate__fadeInLeft')
   },
   {
-    offset:'50%'
+    offset:'80%'
   })
 
   $('.depression-cond').waypoint(function(){
@@ -46,11 +46,11 @@ $(document).ready(function () {
 
   $('.founder-one').waypoint(function(){
     $('.founder-one').addClass('animate__animated animate__fadeInLeft')
-  },offset)
+  },{offset:'65%'})
 
   $('.founder-two').waypoint(function(){
     $('.founder-two').addClass('animate__animated animate__fadeInRight')
-  },offset)
+  },{offset:'65%'})
 
   $('.condition-one').waypoint(function(){
     $('.condition-one').addClass('animate__animated animate__fadeIn')
