@@ -33,4 +33,53 @@ $(document).ready(function () {
     offset:'50%'
   })
 
+  $('.depression-cond').waypoint(function(){
+    $('.founders-heading').addClass('animate__animated animate__fadeInLeft')
+  },
+  {
+    offset:'50%'
+  })
+
+  $('img').waypoint(function(){
+    $('img').addClass('animate__animated animate__fadeInLeft')
+  },offset)
+
+  $('.founder-one').waypoint(function(){
+    $('.founder-one').addClass('animate__animated animate__fadeInLeft')
+  },offset)
+
+  $('.founder-two').waypoint(function(){
+    $('.founder-two').addClass('animate__animated animate__fadeInRight')
+  },offset)
+
+  $('.condition-one').waypoint(function(){
+    $('.condition-one').addClass('animate__animated animate__fadeIn')
+  },offset)
+    $('.condition-two').waypoint(function(){
+    $('.condition-two').addClass('animate__animated animate__fadeIn')
+  },offset)
+    $('.condition-three').waypoint(function(){
+    $('.condition-three').addClass('animate__animated animate__fadeIn')
+  },offset)
+
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        const src = $(img).data('src');
+        $(img).attr('src', src);
+        $(img).on('load', () => {
+          $(img).addClass('loaded');
+        });
+        observer.unobserve(img);
+      }
+    });
+  });
+  const images = $('img[data-src]');
+  images.each(function() {
+    observer.observe(this);
+  });
+
+
 });

@@ -1,8 +1,32 @@
-.founders-heading{
-    opacity: 0;
-    /* color: red; */
+.founders-heading,
+.founder-one,
+.founder-two,
+.condition-one,
+.condition-two,
+.condition-three {
+  opacity: 0;
+  /* color: red; */
 }
 
-.founders-heading.animate__animated{
-    opacity: 1;
+.founders-heading.animate__animated,
+.founder-one.animate__animated,
+.founder-two.animate__animated,
+.condition-one.animate__animated,
+.condition-two.animate__animated,
+.condition-three.animate__animated {
+  opacity: 1;
 }
+
+.founder-two,.condition-one{
+    animation-delay: 0.25s;
+}  
+
+.condition-two,
+.condition-two{
+    animation-delay: 0.35s;
+}  
+
+.condition-three,
+.condition-three{
+    animation-delay: 0.4s;
+}  

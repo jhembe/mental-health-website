@@ -14,6 +14,19 @@
     box-sizing: border-box;
 }
 
+
+/* Set the opacity of lazy-loaded images to 0 by default */
+/* img.lazy {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+} */
+
+/* When an image is loaded, fade it in by setting the opacity to 1 */
+/* img.lazy.loaded {
+  opacity: 1;
+} */
+
+
 /* Hero section */
 
 
